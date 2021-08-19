@@ -1,5 +1,6 @@
 {
-  "name": "svelte-app",
+  "name": "points-in-space",
+  "description": "A space game built using Svelte and PtsJS",
   "version": "1.0.0",
   "private": true,
   "scripts": {

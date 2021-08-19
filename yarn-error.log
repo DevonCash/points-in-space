@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/local/bin/node /Users/dcash/.yarn/bin/yarn.js add README.md package.json public rollup.config.js src tsconfig.json
+
+PATH: 
+  /usr/local/opt/node@12/bin:/usr/local/sbin:/Users/dcash/.yarn/bin:/Users/dcash/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dcash/.local/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/opt/node@12/bin:/usr/local/sbin:/Users/dcash/.yarn/bin:/Users/dcash/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.8/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.5.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/README.md: Not found
+      at Request.params.callback [as _callback] (/Users/dcash/.yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/Users/dcash/.yarn/lib/cli.js:140749:22)
+      at Request.emit (node:events:394:28)
+      at Request.<anonymous> (/Users/dcash/.yarn/lib/cli.js:141721:10)
+      at Request.emit (node:events:394:28)
+      at IncomingMessage.<anonymous> (/Users/dcash/.yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (node:events:513:28)
+      at IncomingMessage.emit (node:events:406:35)
+      at endReadableNT (node:internal/streams/readable:1331:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "points-in-space",
+    "description": "A space game built using Svelte and PtsJS",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w",
+      "start": "sirv public --no-clear",
+      "check": "svelte-check --tsconfig ./tsconfig.json"
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^17.0.0",
+      "@rollup/plugin-node-resolve": "^11.0.0",
+      "rollup": "^2.3.4",
+      "rollup-plugin-css-only": "^3.1.0",
+      "rollup-plugin-livereload": "^2.0.0",
+      "rollup-plugin-svelte": "^7.0.0",
+      "rollup-plugin-terser": "^7.0.0",
+      "svelte": "^3.0.0",
+      "svelte-check": "^2.0.0",
+      "svelte-preprocess": "^4.0.0",
+      "@rollup/plugin-typescript": "^8.0.0",
+      "typescript": "^4.0.0",
+      "tslib": "^2.0.0",
+      "@tsconfig/svelte": "^2.0.0"
+    },
+    "dependencies": {
+      "sirv-cli": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
